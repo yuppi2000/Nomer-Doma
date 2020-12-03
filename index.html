@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Номер Дома</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="scroll">
+            <div class="scroll-text">
+                <a href="#top"></a>
+                <a href="#top">Наверх</a>
+            </div>
+        </div>
+        <nav class="header-menu">
+            <ul>
+                <li class="hamburger"><a href="#" target="blank"></a></li>
+                <li class="logo-pic"><a href="#" target="blank"><img src="./images/logo-pic.png" alt="лого"></a></li>
+                <li class="logo"><a href="#" target="blank"><img src="./images/logo.png" alt="лого"></a></li>
+                <li><a href="#" target="blank"><div class="home"></div></a></li>
+                <li><a href="#" target="blank"><div class="menu-item">Район</div></a></li>
+                <li><a href="#" target="blank"><div class="menu-item menu-item_city">Город</div></a></li>
+                <li><a href="#" target="blank"><div class="menu-circle plus"></div></a></li>
+                <li><a href="#" target="blank"><div class="menu-circle search"></div></a></li>
+                <li><a href="#" target="blank"><div class="menu-circle menu-circle_mail mail"><div class="mail-counter">5</div></div></a></li>
+                <li><a href="#" target="blank"><div class="menu-circle bell"></div></a></li>
+                <li><a href="#" target="blank"><div class="menu-circle menu-circle_chat chat"></div></a></li>
+                <li><img src="./images/slash.png" alt="слэш"></li>
+                <li><a href="#" target="blank"><div class="menu-circle menu-circle_user"><img src="./images/user.png" alt="пользователь"></div></a></li>
+            </ul>
+        </nav>
+        <section class="search">
+            <div class="container">
+                <div class="address-wrapper">
+                    <img src="./images/star.png" alt="звезда">
+                    <div class="address">
+                        <div class="my-home">
+                            <span>Мой дом:</span>
+                            <span class="full-address">Россия, <strong>г. Москва,</strong> индекс 135963</span>
+                        </div>
+                        <p>Набережная Тараса Шевченко, 3</p>
+                    </div>
+                    <a href="#"></a>
+                </div>
+                <input type="text" placeholder="Добавить новый адрес">
+            </div>
+        </section>
+    </header>
+    <main id="top">
+        <article class="main-section">
+        <section class="main-header">
+            <nav>
+                <ul class="main-header-menu">
+                    <li><input class="hide" type="radio" name="tabs" id="tab1" checked>
+                    <label for="tab1" onclick="changeItem()">Новости</label></li>
+                    
+                    <li><input class="hide" type="radio" name="tabs" id="tab2">
+                    <label for="tab2" onclick="changeItem()">Объявления</label>
+                    </li>
+
+                    <li><input class="hide" type="radio" name="tabs" id="tab3">
+                    <label for="tab3" onclick="changeItem()">Мероприятия</label>
+                    </li>
+
+                    <li><input class="hide" type="radio" name="tabs" id="tab4">
+                    <label for="tab4" onclick="changeItem()">Вопросы</label>
+                    </li>
+                    
+                    <li><input class="hide" type="radio" name="tabs" id="tab5">
+                    <label for="tab5" onclick="changeItem()">Отчеты</label>
+                    </li>
+
+                    <li><input class="hide" type="radio" name="tabs" id="tab6">
+                    <label class="burger" for="tab6" onclick="changeItem()"></label>
+                    </li>
+                </ul>
+                <div class="devider"></div>
+            </nav>
+        </section>
+        <article class="posts">
+            <nav>
+                <ul class="posts-menu">
+                    <li><input type="radio" checked class="hide-posts" name="tabs-posts" id="tab-posts1">
+                        <label for="tab-posts1">Все события</label>
+                    </li>
+                    <li><input type="radio" class="hide-posts" name="tabs-posts" id="tab-posts2">
+                        <label for="tab-posts2">Важные</label>
+                    </li>
+                    <li><input type="radio" class="hide-posts" name="tabs-posts" id="tab-posts3">
+                        <label for="tab-posts3">Мои</label>
+                    </li>
+                    <li><input type="radio" class="hide-posts" name="tabs-posts" id="tab-posts4">
+                        <label for="tab-posts4">Поиск</label>
+                    </li>
+                </ul>
+                <div class="add">
+                    <p onclick="underline()">Источники</p>
+                    <button class="add-btn" type="button" aria-label="add"><a href="#" target="blank">Добавить</a></button>
+                </div>
+            </nav>
+            <div class="post">
+            <div class="article-userpic">
+                <a href="#"><img src="./images/userpic.jpg" alt="аватар"></a>
+                <div class="article-title">
+                    <h2 class="name">Сергей Титов <span>(Депутат)</span>                    
+                        <a href="#" class="hide-content" onclick="toHideContent()"></a>
+                    </h2>
+                    <div class="date">
+                        <h3>25.07.2015</h3>
+                        <img src="./images/globe.png" alt="глобус">
+                    </div>
+                    <div class="post-text">
+                        <h2 class="post-text-title">По данному адресу произошёл захват территории</h2>
+                        <p>
+                        С последующим строительством гаражей.Территория принадлежит ОАО 
+                        Ростелеком, захватчиком является председатель ГСК Авто-Новатор.Также 
+                        была захвачена часть территории принадлежащая дому по адресу<a href="#" target="blank">....</a></p>
+                        <div class="post-location">
+                            <img src="./images/pin.png" alt="место">
+                            <h4><span>Место: </span>Москва, ул. Набережная Тараса Шевченко 33</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./images/post1.jpg" class="post-image1" alt="фото1">
+            <img src="./images/post2.jpg" class="post-image2" alt="фото2">
+            <img src="./images/post3.jpg" class="post-image2" alt="фото3">
+            <div class="followers">
+                <a href="#" class="share" target="blank"></a>
+                <a href="#" target="blank" class="follow"></a>
+                <h5>За темой следят <span>165</span> </h5>
+                <img class="arrow" src="./images/arrow3.png" alt="стрелка вправо">
+                <a href="#" target="blank"><img class="user1" src="./images/user1.jpg" alt="пользователь1"></a>
+                <a href="#" target="blank"><img class="user1" src="./images/user2.jpg" alt="пользователь2"></a>
+                <a href="#" target="blank"><img class="user1" src="./images/user3.jpg" alt="пользователь3"></a>
+                <a href="#" target="blank"><img class="user1" src="./images/user4.jpg" alt="пользователь4"></a>
+                <a href="#" target="blank"><img class="user1" src="./images/user5.jpg" alt="пользователь5"></a>
+                <a href="#" target="blank"><img class="user1"  src="./images/user6.jpg" alt="пользователь6"></a>
+                <a class="add-user" href="#" target="blank"></a>
+                <button class="like" type="button" aria-label="like"></button>
+                <span class="like-count">15</span>
+                <button class="dislike" type="button" aria-label="dislike"></button>
+                <span class="like-count">3</span>
+            </div>
+            <div class="show-all-comments">
+                <a href="#">Показать все <span>208</span> комментариев</a>
+            </div>
+            <div class="comments">
+                <div class="comment-card">
+                    <div class="comment-info">
+                        <a href="#" target="blank"><img class="comment-userpic" src="./images/userpic6.jpg" alt="фото пользователя"></a>
+                        <div class="comment-text">
+                            <h6>Низовцев Вячеслав Иванович  <span>(Ответсвенный депутат)</span></h6>
+                            <p>Пришло сообщение из Префектуры на электронную почту - что гаражи подлежат 
+                                сносу, дело передано на рассмотрение в МВД и Управу Фили-давыдково, что они 
+                                собираются искать владельцев этих гаражей. </p>
+                        </div>
+                        <a id="close" href="#"></a>
+                    </div>
+                    <div class="comment-reaction">
+                        <div class="comment-time">
+                            <span>3 часа назад</span>  
+                            <img src="./images/separator.png" alt="разделитель">
+                            <a href="#" target="blank">Ответить</a>
+                        </div>
+                        <div class="comment-likes">
+                            <button class="comment-like" type="button" aria-label="like"></button>
+                            <span class="comment-like-count">5</span>
+                            <button class="comment-dislike" type="button" aria-label="dislike"></button>
+                            <span class="comment-like-count">0</span>
+                            <a class="exclamation" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="devider"></div>
+                
+                <div class="comment-card">
+                    <div class="comment-info">
+                        <a href="#" target="blank"><img class="comment-userpic" src="./images/userpic.jpg" alt="фото пользователя"></a>
+                        <div class="comment-text">
+                            <h6>Сергей Титов</h6>
+                            <p>Обжаловал бездействие органов власти, направив обращение в Прокуратуру</p>
+                        </div>
+                        <a id="close" href="#"></a>
+                    </div>
+                    <div class="comment-reaction">
+                        <div class="comment-time">
+                            <span>40 минут назад</span>  
+                            <img src="./images/separator.png" alt="разделитель">
+                            <a href="#" target="blank">Ответить</a>
+                        </div>
+                        <div class="comment-likes">
+                            <button class="comment-like" type="button" aria-label="like"></button>
+                            <span class="comment-like-count">10</span>
+                            <button class="comment-dislike" type="button" aria-label="dislike"></button>
+                            <span class="comment-like-count">2</span>
+                            <a class="exclamation" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="devider"></div>
+
+                <div class="comment-card">
+                    <div class="comment-info">
+                        <a href="#" target="blank"><img class="comment-userpic" src="./images/userpic2.jpg" alt="фото пользователя"></a>
+                        <div class="comment-text">
+                            <h6>Юрист</h6>
+                            <p>Согласно статье 7.1. КоАП РФ «Самовольное занятие земельного участка», 
+                                самовольное занятие земельного участка или использование земельного участка 
+                                без оформленных в установленном порядке правоустанавливающих документов 
+                                на землю, а в случае необходимости без документов, разрешающих осуществление 
+                                хозяйственной деятельности, влечет наложение административного штрафа на 
+                                граждан в размере от пятисот до одной тысячи рублей; на должностных лиц...</p>
+                        </div>
+                        <a id="close" href="#"></a>
+                    </div>
+                    <div class="comment-reaction">
+                        <div class="comment-time">
+                            <span>13 минут назад</span>  
+                            <img src="./images/separator.png" alt="разделитель">
+                            <a href="#" target="blank">Ответить</a>
+                        </div>
+                        <div class="comment-likes">
+                            <button class="comment-like" type="button" aria-label="like"></button>
+                            <span class="comment-like-count">26</span>
+                            <button class="comment-dislike" type="button" aria-label="dislike"></button>
+                            <span class="comment-like-count">0</span>
+                            <a class="exclamation" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="my-comment">
+                    <img src="./images/user_square.jpg" alt="пользователь">
+                    <input type="text" placeholder="Комментровать...">
+                </div>
+            </div>
+            </div>
+
+            <div class="post">
+                <div class="article-userpic">
+                    <a href="#"><img src="./images/userpic6.jpg" alt="аватар"></a>
+                    <div class="article-title">
+                        <h2 class="name">Павел Пономарев                    
+                            <a href="#" class="hide-content" onclick="toHideContent()"></a>
+                        </h2>
+                        <div class="date">
+                            <h3>25.07.2015</h3>
+                            <img src="./images/globe.png" alt="глобус">
+                        </div>
+                        <div class="post-text post-text_two">
+                            <img src="./images/userpic.jpg" alt="пользователь">
+                            <img src="./images/arrow7.png" alt="стрелочка">
+                            <p>Мама лгала маленькому Андрюше, что детей находят в капусте, и он 
+                                как-то со страхом начал смотреть на тушеную капусту с мясом.<a href="#" target="blank">....</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="devider"></div>
+                <div class="followers followers-two">
+                    <a href="#" target="blank"><img src="./images/star.png" alt="звезда"></a>
+                    <a href="#" class="share share-two" target="blank"></a>
+                    <a href="#" target="blank" class="attention"></a>
+                    <a href="#" target="blank">Показать все <span>208</span> комментариев</a>
+                    <img class="arrow-two" src="./images/arrow3.png" alt="стрелка вправо">
+                    
+                    <button class="like" type="button" aria-label="like"></button>
+                    <span class="like-count">15</span>
+                    <button class="dislike" type="button" aria-label="dislike"></button>
+                    <span class="like-count">3</span>
+                </div>
+                <div class="post-devider">
+                    <img src="./images/post-devider.png" alt="разделитель">
+                </div>
+                <div class="comment-followers-two">
+                    <span>За темой следят</span>
+                    <a href="#" target="blank"><img class="user1" src="./images/user1.jpg" alt="пользователь1"></a>
+                    <a href="#" target="blank"><img class="user1" src="./images/user2.jpg" alt="пользователь2"></a>
+                    <a href="#" target="blank"><img class="user1" src="./images/user3.jpg" alt="пользователь3"></a>
+                    <a href="#" target="blank"><img class="user1" src="./images/user4.jpg" alt="пользователь4"></a>
+                    <a href="#" target="blank"><img class="user1" src="./images/user5.jpg" alt="пользователь5"></a>
+                    <a href="#" target="blank"><img class="user1"  src="./images/user6.jpg" alt="пользователь6"></a>
+                    <a class="arrow-right" href="#" target="blank"></a>
+                </div>
+                <div class="comments">
+                    <div class="comment-card">
+                        <div class="comment-info">
+                            <a href="#" target="blank"><img class="comment-userpic" src="./images/userpic6.jpg" alt="фото пользователя"></a>
+                            <div class="comment-text">
+                                <h6>Низовцев Вячеслав Иванович  <span>(Ответсвенный депутат)</span></h6>
+                                <p>Пришло сообщение из Префектуры на электронную почту - что гаражи подлежат 
+                                    сносу, дело передано на рассмотрение в МВД и Управу Фили-давыдково, что они 
+                                    собираются искать владельцев этих гаражей. </p>
+                            </div>
+                            <a id="close" href="#"></a>
+                        </div>
+                        <div class="comment-reaction">
+                            <div class="comment-time">
+                                <span>3 часа назад</span>  
+                                <img src="./images/separator.png" alt="разделитель">
+                                <a href="#" target="blank">Ответить</a>
+                            </div>
+                            <div class="comment-likes">
+                                <button class="comment-like" type="button" aria-label="like"></button>
+                                <span class="comment-like-count">5</span>
+                                <button class="comment-dislike" type="button" aria-label="dislike"></button>
+                                <span class="comment-like-count">0</span>
+                                <a class="exclamation" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="devider"></div>
+                    
+                    <div class="comment-card">
+                        <div class="comment-info">
+                            <a href="#" target="blank"><img class="comment-userpic" src="./images/userpic.jpg" alt="фото пользователя"></a>
+                            <div class="comment-text">
+                                <h6>Сергей Титов</h6>
+                                <p>Обжаловал бездействие органов власти, направив обращение в Прокуратуру</p>
+                            </div>
+                            <a id="close" href="#"></a>
+                        </div>
+                        
+                        <div class="comment-reaction">
+                            <div class="comment-time">
+                                <span>40 минут назад</span>  
+                                <img src="./images/separator.png" alt="разделитель">
+                                <a href="#" target="blank">Ответить</a>
+                            </div>
+                            
+                            <div class="comment-likes">
+                                <button class="comment-like" type="button" aria-label="like"></button>
+                                <span class="comment-like-count">10</span>
+                                <button class="comment-dislike" type="button" aria-label="dislike"></button>
+                                <span class="comment-like-count">2</span>
+                                <a class="exclamation" href="#"></a>
+                            </div>
+                        </div>
+                        <div class="comment-reply">
+                            
+                            <form class="comment-send-form" action="#" method="POST">
+                                <img src="./images/user6.jpg" alt="пользователь">
+                                <input type="text" placeholder="Ответить...">
+                                <button type="submit" aria-label="send"><a class="comment-send" href="#" target="blank"></a></button>
+                                <a href="#" class="photo"></a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="devider"></div>
+    
+                    <div class="comment-card">
+                        <div class="comment-info">
+                            <a href="#" target="blank"><img class="comment-userpic" src="./images/userpic2.jpg" alt="фото пользователя"></a>
+                            <div class="comment-text">
+                                <h6>Юрист</h6>
+                                <p>Согласно статье 7.1. КоАП РФ «Самовольное занятие земельного участка», 
+                                    самовольное занятие земельного участка или использование земельного участка 
+                                    без оформленных в установленном порядке правоустанавливающих документов 
+                                    на землю, а в случае необходимости без документов, разрешающих осуществление 
+                                    хозяйственной деятельности, влечет наложение административного штрафа на 
+                                    граждан в размере от пятисот до одной тысячи рублей; на должностных лиц...</p>
+                            </div>
+                            <a id="close" href="#"></a>
+                        </div>
+                        <div class="comment-reaction">
+                            <div class="comment-time">
+                                <span>13 минут назад</span>  
+                                <img src="./images/separator.png" alt="разделитель">
+                                <a href="#" target="blank">Ответить</a>
+                            </div>
+                            <div class="comment-likes">
+                                <button class="comment-like" type="button" aria-label="like"></button>
+                                <span class="comment-like-count">26</span>
+                                <button class="comment-dislike" type="button" aria-label="dislike"></button>
+                                <span class="comment-like-count">0</span>
+                                <a class="exclamation" href="#"></a>
+                            </div>
+                        </div>
+                        <div class="post-devider-two">
+                            <img src="./images/post-devider.png" alt="разделитель">
+                        </div>
+                        <div class="comment-reply">
+                            <img src="./images/user6.jpg" alt="пользователь">
+                            <div class="comment-text">
+                                <h6>Сергей Титов</h6>
+                                <p>По настоящему богатый никогда не покажет, что он богат, 
+                                    а вот не очень — обязательно… с умом дела обстоят так же…</p>
+                            </div>
+                            <a id="close" href="#"></a>
+                        </div>
+                        <div class="comment-reaction">
+                            <div class="comment-time">
+                                <span>40 минут назад</span>  
+                                <img src="./images/separator.png" alt="разделитель">
+                                <a href="#" target="blank">Ответить</a>
+                            </div>
+                            <div class="comment-likes">
+                                <button class="comment-like" type="button" aria-label="like"></button>
+                                <span class="comment-like-count">10</span>
+                                <button class="comment-dislike" type="button" aria-label="dislike"></button>
+                                <span class="comment-like-count">2</span>
+                                <a class="exclamation" href="#"></a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="my-comment">
+                            <img src="./images/user_square.jpg" alt="пользователь">
+                            <input type="text" placeholder="Комментровать...">
+                        </div>
+                    </div>
+                    
+                    
+            </div>
+            
+            <div class="post">
+                    <div class="article-userpic">
+                        <a href="#"><img src="./images/userpic.jpg" alt="аватар"></a>
+                        <div class="article-title">
+                            <h2 class="name">Сергей Титов                   
+                                <a href="#" class="hide-content" onclick="toHideContent()"></a>
+                            </h2>
+                            <div class="date">
+                                <h3>25.07.2015</h3>
+                                <img src="./images/globe.png" alt="глобус">
+                            </div>
+                            <div class="post-text post-text-two">
+                                <p><a href="#" target="blank">Территория принадлежит ОАО Ростелеком,</a>  захватчиком является председатель 
+                                    ГСК Авто-Новатор.Также была захвачена часть территории принадлежащая...</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="photo-container">
+                        <img src="./images/picture.jpg" alt="фото1">
+                        <img src="./images/video.jpg" alt="фото2">  
+                    </div>
+                    <div class="photo-grid">
+                        <img src="./images/picture3.jpg" alt="фото3">
+                        <img src="./images/picture4.jpg" alt="фото4">
+                        <img src="./images/picture5.jpg" alt="фото5">
+                        <img src="./images/picture6.jpg" alt="фото6">
+                        <img src="./images/picture7.jpg" alt="фото7">
+                    </div>
+                    <div class="devider"></div>
+                    <div class="followers followers-two">
+                        <div>
+                            <a href="#" target="blank" class="add-favorite"></a>
+                            <a href="#" class="share share-two" target="blank"></a>
+                            <a href="#" target="blank" class="attention"></a>
+                            <a href="#" target="blank"><span>0</span> комментариев</a>
+                            <img class="arrow-two" src="./images/arrow3.png" alt="стрелка вправо">
+                        </div>
+                        <div>
+                            <button class="like" type="button" aria-label="like"></button>
+                            <span class="like-count">15</span>
+                            <button class="dislike" type="button" aria-label="dislike"></button>
+                            <span class="like-count">3</span>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="comment-card comment-card-two">
+                            <div class="my-comment">
+                                <img src="./images/user_square.jpg" alt="пользователь">
+                                <input type="text" placeholder="Комментровать...">
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            
+            <div class="post">
+                <div class="article-userpic article-userpic-two">
+                    <a href="#"><img src="./images/userpic6.jpg" alt="аватар"></a>
+                    <a href="#" class="hide-content" onclick="toHideContent()"></a>
+                    <div class="article-title">
+                        <h2 class="name">Павел Пономарев                   
+                            
+                        </h2>
+                        <div class="date date-two">
+                            <h3>25.07.2015</h3>
+                            <img src="./images/globe.png" alt="глобус">
+                        </div>
+                        <div class="post-content">
+                            <a href="#" target="blank">
+                                <img src="./images/song.png" alt="песня">
+                                <h3>Sons Of Maria</h3>
+                                <span>–  Whatever You Want to Be (Original Mix)</span>
+                                <span>5:07</span>
+                            </a>  
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="devider"></div>
+                <div class="followers followers-two">
+                    <div>
+                        <a href="#" target="blank" class="add-favorite"></a>
+                        <a href="#" class="share share-two" target="blank"></a>
+                        <a href="#" target="blank" class="attention"></a>
+                        <a href="#" target="blank"><span>0</span> комментариев</a>
+                        <img class="arrow-two" src="./images/arrow3.png" alt="стрелка вправо">
+                    </div>
+                    <div>
+                        <button class="like" type="button" aria-label="like"></button>
+                        <span class="like-count">15</span>
+                        <button class="dislike" type="button" aria-label="dislike"></button>
+                        <span class="like-count">3</span>
+                    </div>
+                </div>
+                <div class="comments">
+                    <div class="comment-card comment-card-two">
+                        <div class="my-comment">
+                            <img src="./images/user_square.jpg" alt="пользователь">
+                            <input type="text" placeholder="Комментровать...">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post">
+                <div class="article-userpic article-userpic-two">
+                    <a href="#"><img src="./images/userpic6.jpg" alt="аватар"></a>
+                    <a href="#" class="hide-content" onclick="toHideContent()"></a>
+                    <div class="article-title">
+                        <h2 class="name">Павел Пономарев                   
+                            
+                        </h2>
+                        <div class="date date-two">
+                            <h3>25.07.2015</h3>
+                            <img src="./images/globe.png" alt="глобус">
+                        </div>
+                        <div class="post-content post-content-two">
+                            <a href="#" target="blank">
+                                <img src="./images/document.png" alt="документ">
+                                <span>Документ: </span>
+                                <h3>Тех требование NomerDoma.docx</h3>
+                            </a>  
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="devider"></div>
+                <div class="followers followers-two">
+                    <div>
+                        <a href="#" target="blank" class="add-favorite"></a>
+                        <a href="#" class="share share-two" target="blank"></a>
+                        <a href="#" target="blank" class="attention"></a>
+                        <a href="#" target="blank"><span>0</span> комментариев</a>
+                        <img class="arrow-two" src="./images/arrow3.png" alt="стрелка вправо">
+                    </div>
+                    <div>
+                        <button class="like" type="button" aria-label="like"></button>
+                        <span class="like-count">15</span>
+                        <button class="dislike" type="button" aria-label="dislike"></button>
+                        <span class="like-count">3</span>
+                </div>
+                </div>
+                <div class="comments">
+                    <div class="comment-card comment-card-two">
+                        <div class="my-comment">
+                            <img src="./images/user_square.jpg" alt="пользователь">
+                            <input type="text" placeholder="Комментровать...">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="post">
+                <div class="article-userpic article-userpic-two">
+                    <a href="#"><img src="./images/userpic6.jpg" alt="аватар"></a>
+                    <a href="#" class="hide-content" onclick="toHideContent()"></a>
+                    <div class="article-title">
+                        <h2 class="name">Павел Пономарев                   
+                            
+                        </h2>
+                        <div class="date date-two">
+                            <h3>25.07.2015</h3>
+                            <img src="./images/globe.png" alt="глобус">
+                        </div>
+                        <div class="post-content post-content-two post-content-three">
+                            <h3>Открытое голосование</h3> 
+                            <p>По данному адресу произошёл захват территории. Что будем делать?
+                            </p>
+                            <div class="devider"></div>
+                            <form action="#" method="POST">
+                                <input class="custom-radio" type="radio" name="poll" id="option1">
+                                <label for="option1">Устроить собрание жильцов
+                                </label> <br>
+                                <input class="custom-radio" type="radio" name="poll" id="option2">
+                                <label for="option2">Написать заявление в полицию
+                                </label> <br>
+                                <input class="custom-radio" type="radio" name="poll" id="option3">
+                                <label for="option3">Мне все равно
+                                </label>
+                            </form>
+
+                            <div class="devider"></div>
+
+                            <figure>
+                                <figcaption>Устроить собрание жильцов</figcaption>
+                                <img src="./images/graph1.jpg" alt="график">
+                                <img src="./images/graph2.jpg" alt="график">
+                                <span>12</span>
+                                <span>24,2%</span>
+                            </figure>
+                            <figure>
+                                <figcaption>Написать заявление в полицию
+                                </figcaption>
+                                <img src="./images/graph1.jpg" alt="график">
+                                <img src="./images/graph3.jpg" alt="график">
+                                <span>33</span>
+                                <span>63,5%</span>
+                            </figure>
+
+                            <figure>
+                                <figcaption>Мне все равно</figcaption>
+                                <img src="./images/graph1.jpg" alt="график">
+                                <img src="./images/graph4.jpg" alt="график">
+                                <span>8</span>
+                                <span>12,3%</span>
+                            </figure>
+                            <p>Проголосовало <span class="span">53</span> человека</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="devider"></div>
+                <div class="followers followers-two">
+                    <div>
+                        <a href="#" target="blank" class="add-favorite"></a>
+                        <a href="#" class="share share-two" target="blank"></a>
+                        <a href="#" target="blank" class="attention"></a>
+                        <a href="#" target="blank"><span>0</span> комментариев</a>
+                        <img class="arrow-two" src="./images/arrow3.png" alt="стрелка вправо">
+                    </div>
+                    <div>
+                        <button class="like" type="button" aria-label="like"></button>
+                        <span class="like-count">15</span>
+                        <button class="dislike" type="button" aria-label="dislike"></button>
+                        <span class="like-count">3</span>
+                    </div>
+                </div>
+                <div class="comments">
+                    <div class="comment-card comment-card-two">
+                        <div class="my-comment">
+                            <img src="./images/user_square.jpg" alt="пользователь">
+                            <input type="text" placeholder="Комментровать...">
+                            
+                        </div>
+                        <div class="send">
+                            <div class="attach">
+                                <a class="file" href="#" target="blank"></a>
+                                <a class="photo" href="#" target="blank"></a>
+                                <a class="smile" href="#" target="blank"></a>
+                            </div>
+                            <button type="submit" aria-label="send">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                   
+
+        </article>
+        </article>
+        <aside>
+            <section class="main-header_aside">
+                <nav>
+                    <ul class="main-header-menu_aside">
+                        <li><input class="hide-aside" type="radio" name="tabs" id="tab-aside1">
+                        <label class="aside-label" for="tab-aside1">Обзор</label></li>
+                        
+                        <li><input class="hide-aside" type="radio" name="tabs" id="tab-aside2">
+                        <label class="aside-label" for="tab-aside2">Кто есть кто</label>
+                        </li>
+    
+                        <li><input class="hide-aside" type="radio" name="tabs" id="tab-aside3">
+                        <label class="aside-label" for="tab-aside3">О доме</label>
+                        </li>
+    
+                        <li><input class="hide-aside" type="radio" name="tabs" id="tab-aside4">
+                        <label class="aside-label" for="tab-aside4">Услуги</label>
+                        </li>
+                    </ul>
+                </nav>  
+            </section>
+                <div class="house-info">
+                    <div class="address-aside">
+                        <img src="./images/herb.jpg" alt="герб">
+                        <div class="address-aside-text">
+                            <h1>Набережная 
+                                Тараса Шевченко 33</h1>
+                            <p>Россия,  <strong>г. Москва, </strong>  Индекс <span class="index">128065</span> </p>
+                            <p>Почтовое отделение: <span class="post-office">№ 209 <span></p>
+                        </div>
+                        <a href="#" class="hide-content"></a>
+                    </div>
+                        <div class="social">
+                        <div class="favorite">
+                            <a href="#"><img src="./images/star.png" alt="звезда"></a>
+                            <span>в избранном</span>
+                        </div>
+                        <div class="address-aside-share">
+                            <span>Поделиться</span>
+                            <a class="vk" href="#" target="blank"></a>
+                            <a class="twitter" href="#" target="blank"></a>
+                            <a class="fb" href="#" target="blank"></a>
+                            <a class="ok" href="#" target="blank"></a>
+                        </div>
+                        </div>
+                        <div class="social-devider"></div>
+                    
+                    <div class="map-details">
+                        <div class="panorama">
+                            <a href="#" class="360" target="blank"></a>
+                            <span>Панорама</span>
+                        </div>
+                        <div class="show-map">
+                            <span>Показать на карте</span>
+                            <a href="#" class="map-show" target="blank"><img src="./images/btn.png" alt="показать на карте"></a>
+                        </div>
+                    </div>
+                    <div class="house-info-map">
+                        <img src="./images/house.jpg" alt="здание">
+                        <img src="./images/map.jpg" alt="карта">
+                        <img src="./images/pin2.png" alt="адрес">
+                    </div>
+                    <div class="photo-add">
+                        <a href="#"><span class="show-all">Показать все <span class="quantity">18</span> фотографий</span></a>
+                        <button class="add-photo-btn" type="button" aria-label="add-photo">
+                            <span class="plus">+</span> Добавить фото
+                        </button>
+                    </div>
+                    <div class="social-devider"></div>
+                    <div class="house-info-details">
+                        <h2>Тип здания _______________ <span>Жилой дом</span> </h2>
+                        <h2>Количество этажей ________ <span>12</span> </h2>
+                        <h2>Управляющая компания ____ <span>ООО "Капиталъ"</span> </h2>
+                        <p> <span>Описание для примера</span> — крепость в центре Москвы и 
+                            древнейшая её часть, главный общественно-политический 
+                            и историко-художественный комплекс города, официальная 
+                            резиденция президента Российской Федерации. Википедия. </p>
+                        <a href="#"><img src="./images/dots.png" alt="подробнее"></a>
+                    </div>
+                </div>
+            </div>
+                <img class="shadow" src="./images/shadow.png" alt="тень">
+                <div class="services">
+                  <h3>Услуги поблизости</h3>
+                        <div class="company-card">
+                            <img src="./images/girl.jpg" alt="салон">
+                            <div class="company-card-text">
+                                <h4>Салон по уходу за волосами "СТРИЖ"</h4>
+                                <p>Адрес: Малая Бронная ул., 21/13, стр. 2, Москва</p>
+                                <p>Телефон:8 (495) 691-96-36   Часы работы: 10:00–20:00</p>
+                            </div>
+                        </div>
+                        <div class="services-details">
+                            <button class="add-photo-btn">
+                                <span class="plus-review">+</span>
+                                Добавить отзыв
+                            </button>
+                            <div class="buttons">
+                                <button class="add-photo-btn add-photo-btn_other">Web сайт</button>
+                                <button class="add-photo-btn add-photo-btn_other">На карте</button>
+                            </div>
+                        </div>
+                        <div class="social-devider_aside"></div>
+                        <div class="company-card">
+                            <img src="./images/watch.jpg" alt="ремонт часов">
+                            <div class="company-card-text">
+                                <h4>Ремонт часов  Full Service  </h4>
+                                <p>Адрес: Смоленский пассаж, Смоленская пл., 3, Москва, 117393</p>
+                                <p>Телефон:8 (495) 788-89-90    Часы работы: 10:00–22:00</p>
+                            </div>
+                        </div>
+                        <div class="services-details">
+                            <button class="add-photo-btn">
+                                <span class="plus-review">+</span>
+                                Добавить отзыв
+                            </button>
+                            <div class="buttons">
+                                <button class="add-photo-btn add-photo-btn_other">Web сайт</button>
+                                <button class="add-photo-btn add-photo-btn_other">На карте</button>
+                            </div>
+                        </div>
+                        <div class="social-devider_aside"></div>
+                        <div class="company-card">
+                            <img src="./images/camera.jpg" alt="ремонт техники">
+                            <div class="company-card-text">
+                                <h4>Ремонт цифровой техники</h4>
+                                <p>Адрес: Малая Бронная ул., 21/13, стр. 2, Москва</p>
+                                <p>Телефон:8 (495) 691-96-36   Часы работы: 10:00–20:00</p>
+                            </div>
+                        </div>
+                        <div class="services-details">
+                            <button class="add-photo-btn">
+                                <span class="plus-review">+</span>
+                                Добавить отзыв
+                            </button>
+                            <div class="buttons">
+                                <button class="add-photo-btn add-photo-btn_other">Web сайт</button>
+                                <button class="add-photo-btn add-photo-btn_other">На карте</button>
+                            </div>
+                        </div>
+                        <div class="social-devider_aside"></div>
+                        <div class="company-card">
+                            <img src="./images/jeep.jpg" alt="джип">
+                            <div class="company-card-text">
+                                <h4>Официальный длер Mitsubishi</h4>
+                                <p>Адрес: Смоленский пассаж, Смоленская пл., 3, Москва, 117393</p>
+                                <p>Телефон:8 (495) 788-89-90    Часы работы: 10:00–22:00</p>
+                            </div>
+                        </div>
+                        <div class="services-details">
+                            <button class="add-photo-btn">
+                                <span class="plus-review">+</span>
+                                Добавить отзыв
+                            </button>
+                            <div class="buttons">
+                                <button class="add-photo-btn add-photo-btn_other">Web сайт</button>
+                                <button class="add-photo-btn add-photo-btn_other">На карте</button>
+                            </div>
+                        </div>
+            <a href="#"><img src="./images/dots.png" alt="подробнее"></a>
+        </div>
+            
+        </aside>
+    </main>
+    <footer></footer>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
